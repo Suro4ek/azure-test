@@ -17,11 +17,11 @@ RUN \
 COPY . .
 RUN npm run build
 
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
+# RUN addgroup -g 1001 -S nodejs
+# RUN adduser -S nextjs -u 1001
 # COPY --from=builder  /app/.next /app/.next
 # COPY --from=builder  /app/public /app/public
-USER nextjs
+# USER nextjs
 
 EXPOSE 3000
 
