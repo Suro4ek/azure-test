@@ -1,4 +1,4 @@
-export default function Pagination({page, setPage}) {
+export default function Pagination({page, setPage}:any) {
     const pageStart = page >= 25 ? 25 : 0;
     const pageEnd = page >= 25 ? 50 : 25;
     return (
